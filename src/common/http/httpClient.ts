@@ -63,7 +63,7 @@ export class HttpClient {
 
    constructor() {
       this.httpClient = axios.create({
-         baseURL: 'https://jsonplaceholder.typicode.com',
+         baseURL: import.meta.env.VITE_BACKEND_URL,
          timeout: 60000,
       })
 
